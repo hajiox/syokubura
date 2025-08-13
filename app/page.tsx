@@ -108,10 +108,10 @@ export default function HomePage() {
                   <div className="inline-block bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     期間限定
                   </div>
-                  <h3 className="text-2xl font-bold text-stone-800 mb-4">アスパラタンメン好評販売中！</h3>
-                  <p className="text-lg text-stone-600 mb-4">５月下旬頃まで</p>
+                  <h3 className="text-2xl font-bold text-stone-800 mb-4">会津二大冷麺好評販売中！</h3>
+                  <p className="text-lg text-stone-600 mb-4">9月頃まで</p>
                   <p className="text-stone-600">
-                    会津アスパラ+会津山塩の最高の組み合わせ！美味しい春の味覚をお楽しみください。
+                    会津山塩冷やし中華と冷たい喜多方ラーメンです！
                   </p>
                 </div>
                 <div className="order-1 lg:order-2">

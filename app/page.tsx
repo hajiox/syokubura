@@ -102,23 +102,28 @@ export default function HomePage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-6 shadow-lg border border-blue-200">
+            <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-6 shadow-lg border border-orange-200">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    ９月頃まで
+                  <div className="inline-block bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    9月下旬より提供開始
                   </div>
-                  <h3 className="text-2xl font-bold text-stone-800 mb-4">会津の２大冷麺好評販売中！</h3>
-                  <p className="text-lg text-stone-600 mb-4">冷たい喜多方ラーメン・会津山塩冷やし中華</p>
+                  <h3 className="text-2xl font-bold text-stone-800 mb-4">会津産ピーナッツ担々麺</h3>
+                  <p className="text-stone-600 mb-4">
+                    ピーナッツの旨みとコクで驚くほど濃厚に仕上がったピリ辛のスープはやみつきになる事間違いなし。
+                  </p>
+                  <p className="text-stone-600 mb-4">
+                    挽チャーシューと角切りチャーシューのWチャーシューと白髪ねぎと小葱の２つのネギが濃厚スープの旨みを引き立てます。
+                  </p>
                   <p className="text-stone-600">
-                    暑い夏にぴったりの冷たい麺料理。喜多方ラーメンの冷製版と、会津山塩を使った特製冷やし中華をお楽しみください。
+                    ミニひれソースかつ丼とのセットもお勧め。是非、会津産ピーナッツ担々麺をご賞味下さい(^^)/
                   </p>
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="relative overflow-hidden rounded-lg shadow-md">
                     <Image
-                      src="/images/cold-ramen-set.jpeg"
-                      alt="会津の２大冷麺 - 冷たい喜多方ラーメンと会津山塩冷やし中華"
+                      src="/images/peanut-tantanmen-new.jpeg"
+                      alt="会津産ピーナッツ担々麺 - 濃厚なピーナッツスープにWチャーシューと２種類のネギ"
                       width={400}
                       height={300}
                       className="w-full h-auto object-cover"
@@ -213,8 +218,8 @@ export default function HomePage() {
 
             <div className="relative h-56 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
               <Image
-                src="/images/aspara-tanmen-close.jpeg"
-                alt="アスパラタンメン"
+                src="/images/peanut-tantanmen-new.jpeg"
+                alt="会津産ピーナッツ担々麺"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />

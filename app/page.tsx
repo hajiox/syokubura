@@ -102,23 +102,23 @@ export default function HomePage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-green-50 to-amber-50 rounded-lg p-6 shadow-lg border border-green-200">
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-6 shadow-lg border border-blue-200">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="inline-block bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    期間限定
+                  <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    ９月頃まで
                   </div>
-                  <h3 className="text-2xl font-bold text-stone-800 mb-4">会津二大冷麺好評販売中！</h3>
-                  <p className="text-lg text-stone-600 mb-4">9月頃まで</p>
+                  <h3 className="text-2xl font-bold text-stone-800 mb-4">会津の２大冷麺好評販売中！</h3>
+                  <p className="text-lg text-stone-600 mb-4">冷たい喜多方ラーメン・会津山塩冷やし中華</p>
                   <p className="text-stone-600">
-                    会津山塩冷やし中華と冷たい喜多方ラーメンです！
+                    暑い夏にぴったりの冷たい麺料理。喜多方ラーメンの冷製版と、会津山塩を使った特製冷やし中華をお楽しみください。
                   </p>
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="relative overflow-hidden rounded-lg shadow-md">
                     <Image
-                      src="/images/aspara-tanmen-new.png"
-                      alt="アスパラタンメン - 新鮮なアスパラガスがトッピングされたタンメン"
+                      src="/images/cold-ramen-set.jpeg"
+                      alt="会津の２大冷麺 - 冷たい喜多方ラーメンと会津山塩冷やし中華"
                       width={400}
                       height={300}
                       className="w-full h-auto object-cover"

@@ -9,10 +9,8 @@ export default function HomePage() {
     <div className="min-h-screen bg-stone-50">
       <Header />
 
-      {/* Hero Carousel Section */}
       <HeroCarousel />
 
-      {/* About Section - 元のヒーローセクションのテキストを移動 */}
       <section className="py-16 bg-gradient-to-br from-amber-50 to-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -30,7 +28,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Ramen Banner Section */}
       <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/sandai" className="block">
@@ -47,7 +44,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Features Section */}
       <section className="py-12 bg-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -94,7 +90,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Seasonal Menu Section */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
@@ -102,28 +97,48 @@ export default function HomePage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-6 shadow-lg border border-orange-200">
+            <div className="bg-stone-50 rounded-lg p-6 shadow-lg border border-stone-200">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                 <div className="order-2 lg:order-1">
-                  <div className="inline-block bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    9月下旬より提供開始
+                  <div className="inline-block bg-stone-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    提供開始
                   </div>
-                  <h3 className="text-2xl font-bold text-stone-800 mb-4">会津産ピーナッツ担々麺</h3>
-                  <p className="text-stone-600 mb-4">
-                    ピーナッツの旨みとコクで驚くほど濃厚に仕上がったピリ辛のスープはやみつきになる事間違いなし。
-                  </p>
-                  <p className="text-stone-600 mb-4">
-                    挽チャーシューと角切りチャーシューのWチャーシューと白髪ねぎと小葱の２つのネギが濃厚スープの旨みを引き立てます。
-                  </p>
-                  <p className="text-stone-600">
-                    ミニひれソースかつ丼とのセットもお勧め。是非、会津産ピーナッツ担々麺をご賞味下さい(^^)/
-                  </p>
+                  <h3 className="text-2xl font-bold text-stone-800 mb-4">食ブラ冬の二大メニュー</h3>
+
+                  <div className="space-y-4 mb-6">
+                    <div className="border-l-4 border-stone-600 pl-4">
+                      <h4 className="font-bold text-lg text-stone-800 mb-1">デカ盛り唐揚げ定食</h4>
+                      <p className="text-stone-600 text-sm">
+                        400gの山盛り。ラーメン醤油だれの下味で、揚げたての旨さが特徴。
+                      </p>
+                    </div>
+
+                    <div className="border-l-4 border-stone-600 pl-4">
+                      <h4 className="font-bold text-lg text-stone-800 mb-1">デカ盛りモツ炒め定食</h4>
+                      <p className="text-stone-600 text-sm">
+                        国産大腸のみ使用。丁寧な下処理で柔らかく臭みのない人気メニュー。
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white rounded-lg p-4 shadow-md space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-2xl font-bold text-stone-800">税込 1,050円</span>
+                      <span className="bg-stone-800 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        ご飯大盛り無料
+                      </span>
+                    </div>
+                    <div className="border-t border-gray-200 pt-2">
+                      <p className="text-stone-700 font-semibold text-sm">テイクアウトも可能</p>
+                      <p className="text-stone-600 text-sm">おかずのみ 850円（2〜2.5人前）</p>
+                    </div>
+                  </div>
                 </div>
                 <div className="order-1 lg:order-2">
                   <div className="relative overflow-hidden rounded-lg shadow-md">
                     <Image
-                      src="/images/peanut-tantanmen-new.jpeg"
-                      alt="会津産ピーナッツ担々麺 - 濃厚なピーナッツスープにWチャーシューと２種類のネギ"
+                      src="/images/winter-two-menus.jpg"
+                      alt="デカ盛り唐揚げ定食とデカ盛りモツ炒め定食"
                       width={400}
                       height={300}
                       className="w-full h-auto object-cover"
@@ -136,7 +151,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Gallery Section */}
       <section className="py-12 bg-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
@@ -218,8 +232,8 @@ export default function HomePage() {
 
             <div className="relative h-56 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
               <Image
-                src="/images/peanut-tantanmen-new.jpeg"
-                alt="会津産ピーナッツ担々麺"
+                src="/images/winter-two-menus.jpg"
+                alt="デカ盛り唐揚げ定食とデカ盛りモツ炒め定食"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />

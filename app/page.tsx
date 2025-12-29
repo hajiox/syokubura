@@ -90,74 +90,32 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 新規作成したお知らせセクション */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-stone-800 mb-4">お知らせ</h2>
-          </div>
-
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg p-8 shadow-lg border-2 border-amber-200">
-            <div className="space-y-6">
-              <div className="text-center">
-                <p className="text-lg text-stone-700 font-medium">こんにちは。</p>
-                <p className="text-lg text-stone-700 font-medium mb-4">会津食のブランド館、通称食ブラです。</p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-bold text-amber-800 mb-4 text-center">年末年始の営業のお知らせ</h3>
-                <div className="space-y-3 text-stone-700">
-                  <p className="text-center">
-                    当館は<span className="font-bold text-amber-800">12月31日まで営業</span>いたします。
-                  </p>
-                  <p className="text-center">
-                    新年は<span className="font-bold text-amber-800">1月2日より営業</span>いたします。
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <h3 className="text-xl font-bold text-amber-800 mb-4 text-center">テイクアウトもやってます！</h3>
-                <ul className="space-y-2 text-stone-700">
-                  <li className="flex items-start">
-                    <span className="text-amber-600 mr-2">•</span>
-                    <span>ソースかつ丼、カツのみ</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-amber-600 mr-2">•</span>
-                    <span>デカ盛り唐揚げ、モツ炒めおかずのみ</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-amber-600 mr-2">•</span>
-                    <span>カレー各種</span>
-                  </li>
-                </ul>
-                <p className="mt-4 text-center text-stone-700 font-medium">
-                  お雑煮・おせちに飽きたら
-                  <br />
-                  是非ご利用ください。
-                </p>
-              </div>
-
-              <div className="text-center space-y-2">
-                <p className="text-lg font-bold text-stone-800">ご来店、宜しくお願いいたします。</p>
-              </div>
-
-              <div className="bg-amber-100 rounded-lg p-4 text-sm text-stone-600 space-y-2">
-                <p>
-                  <span className="font-semibold">営業時間：</span>朝10時開店、午後15時ラストオーダー
-                </p>
-                <p className="text-stone-500">
-                  ※材料が無くなり次第、販売終了となる商品もございますので、売れ切れの際はご了承ください。
-                </p>
-              </div>
-
-              <div className="text-center text-sm text-stone-600 pt-4 border-t border-amber-200">
-                <p className="font-semibold text-stone-700">道の駅あいづ 湯川・会津坂下内 フードコート</p>
-                <p className="font-bold text-amber-800 text-base mt-1">会津食のブランド館</p>
-                <p className="mt-2">〒969-3555 福島県河沼郡湯川村佐野目五丁ノ目78-1</p>
-              </div>
+          <div className="text-center space-y-6 text-stone-700">
+            <div className="pt-4 space-y-2">
+              <h3 className="text-xl font-bold text-stone-800">年末年始の営業のお知らせ</h3>
+              <p className="text-base">
+                当館は<span className="font-bold">12月31日まで営業</span>いたします。
+              </p>
+              <p className="text-base">
+                新年は<span className="font-bold">1月2日より営業</span>いたします。
+              </p>
             </div>
+
+            <div className="pt-4 space-y-2">
+              <h3 className="text-xl font-bold text-stone-800">テイクアウトもやってます！</h3>
+              <p className="text-base">ソースかつ丼、カツのみ</p>
+              <p className="text-base">デカ盛り唐揚げ、モツ炒めおかずのみ</p>
+              <p className="text-base">カレー各種</p>
+              <p className="text-base pt-2">
+                お雑煮・おせちに飽きたら
+                <br />
+                是非ご利用ください。
+              </p>
+            </div>
+
+            <p className="text-lg font-bold text-stone-800 pt-4">ご来店、宜しくお願いいたします。</p>
           </div>
         </div>
       </section>

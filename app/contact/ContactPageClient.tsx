@@ -145,7 +145,7 @@ export default function ContactPageClient() {
                       <div>
                         <h3 className="font-semibold text-lg text-stone-800 mb-1">所在地</h3>
                         <p className="text-stone-600">
-                          道の駅あいづ湖川・会津坂下
+                          道の駅あいづ 湯川・会津坂下
                           <br />
                           福島県河沼郡会津坂下町大字片門字太子堂丁73-1
                         </p>

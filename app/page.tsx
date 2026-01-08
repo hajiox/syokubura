@@ -90,36 +90,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-12 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 text-stone-700">
-            <div className="pt-4 space-y-2">
-              <h3 className="text-xl font-bold text-stone-800">年末年始の営業のお知らせ</h3>
-              <p className="text-base">
-                当館は<span className="font-bold">12月31日まで営業</span>いたします。
-              </p>
-              <p className="text-base">
-                新年は<span className="font-bold">1月2日より営業</span>いたします。
-              </p>
-            </div>
-
-            <div className="pt-4 space-y-2">
-              <h3 className="text-xl font-bold text-stone-800">テイクアウトもやってます！</h3>
-              <p className="text-base">ソースかつ丼、カツのみ</p>
-              <p className="text-base">デカ盛り唐揚げ、モツ炒めおかずのみ</p>
-              <p className="text-base">カレー各種</p>
-              <p className="text-base pt-2">
-                お雑煮・おせちに飽きたら
-                <br />
-                是非ご利用ください。
-              </p>
-            </div>
-
-            <p className="text-lg font-bold text-stone-800 pt-4">ご来店、宜しくお願いいたします。</p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-12 bg-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">

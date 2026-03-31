@@ -96,57 +96,10 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-stone-800 mb-4">季節メニュー</h2>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-stone-50 rounded-lg p-6 shadow-lg border border-stone-200">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-                <div className="order-2 lg:order-1">
-                  <div className="inline-block bg-stone-800 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    提供開始
-                  </div>
-                  <h3 className="text-2xl font-bold text-stone-800 mb-4">食ブラ冬の二大メニュー</h3>
-
-                  <div className="space-y-4 mb-6">
-                    <div className="border-l-4 border-stone-600 pl-4">
-                      <h4 className="font-bold text-lg text-stone-800 mb-1">デカ盛り唐揚げ定食</h4>
-                      <p className="text-stone-600 text-sm">
-                        400gの山盛り。ラーメン醤油だれの下味で、揚げたての旨さが特徴。
-                      </p>
-                    </div>
-
-                    <div className="border-l-4 border-stone-600 pl-4">
-                      <h4 className="font-bold text-lg text-stone-800 mb-1">デカ盛りモツ炒め定食</h4>
-                      <p className="text-stone-600 text-sm">
-                        国産大腸のみ使用。丁寧な下処理で柔らかく臭みのない人気メニュー。
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="bg-white rounded-lg p-4 shadow-md space-y-2">
-                    <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-stone-800">税込 1,050円</span>
-                      <span className="bg-stone-800 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        ご飯大盛り無料
-                      </span>
-                    </div>
-                    <div className="border-t border-gray-200 pt-2">
-                      <p className="text-stone-700 font-semibold text-sm">テイクアウトも可能</p>
-                      <p className="text-stone-600 text-sm">おかずのみ 850円（2〜2.5人前）</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="order-1 lg:order-2">
-                  <div className="relative overflow-hidden rounded-lg shadow-md">
-                    <Image
-                      src="/images/winter-two-menus.jpg"
-                      alt="デカ盛り唐揚げ定食とデカ盛りモツ炒め定食"
-                      width={400}
-                      height={300}
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-red-600 font-bold text-lg">
+              デカ盛り唐揚げ定食、デカ盛りモツ炒め定食の提供は終了いたしました。
+            </p>
           </div>
         </div>
       </section>

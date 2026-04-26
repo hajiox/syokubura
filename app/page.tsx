@@ -98,12 +98,13 @@ export default function HomePage() {
 
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div className="relative h-72 md:h-80 overflow-hidden rounded-lg shadow-md">
+              <div className="rounded-lg shadow-md overflow-hidden">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%202026%E5%B9%B44%E6%9C%8826%E6%97%A5%2011_55_29-9gUBZLOqt0sapBiT7eM3UbQsBLn72o.png"
                   alt="会津山塩野菜たっぷりアスパラタンメン"
-                  fill
-                  className="object-cover"
+                  width={600}
+                  height={600}
+                  className="w-full h-auto"
                 />
               </div>
               <div>

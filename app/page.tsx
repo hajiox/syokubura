@@ -96,10 +96,28 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-stone-800 mb-4">季節メニュー</h2>
           </div>
 
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-red-600 font-bold text-lg">
-              デカ盛り唐揚げ定食、デカ盛りモツ炒め定食の提供は終了いたしました。
-            </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="rounded-lg shadow-md overflow-hidden">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%202026%E5%B9%B44%E6%9C%8826%E6%97%A5%2011_55_29-9gUBZLOqt0sapBiT7eM3UbQsBLn72o.png"
+                  alt="会津山塩野菜たっぷりアスパラタンメン"
+                  width={600}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div>
+                <p className="text-stone-500 text-sm mb-2">春季限定</p>
+                <h3 className="text-2xl font-bold text-stone-800 mb-3">
+                  会津山塩野菜たっぷり<br />アスパラタンメン
+                </h3>
+                <p className="text-stone-600 leading-relaxed mb-4">
+                  こんにちは。会津食のブランド館です。毎年大好評の「会津山塩野菜たっぷりアスパラタンメン」、今年もスタートしました！会津産グリーンアスパラの甘みとシャキシャキ感、たっぷり野菜の旨み、会津山塩のまろやかな塩味が溶け合う春だけの一杯です。道の駅あいづ 湯川・会津坂下にお越しの際は、ぜひご賞味ください。
+                </p>
+                <p className="text-2xl font-bold text-stone-800">930円</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

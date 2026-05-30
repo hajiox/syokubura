@@ -1,19 +1,25 @@
 import Link from "next/link"
 
-export function Footer() {
+type FooterProps = {
+  showMapLink?: boolean
+}
+
+export function Footer({ showMapLink = true }: FooterProps) {
   return (
     <footer className="bg-stone-800 text-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="border-t border-stone-700 pt-8">
-          <div className="text-center mb-4">
-            <Link
-              href="/access"
-              data-conversion="store-map"
-              className="inline-block bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
-            >
-              お店への地図はこちら
-            </Link>
-          </div>
+          {showMapLink && (
+            <div className="text-center mb-4">
+              <Link
+                href="/store-map"
+                data-conversion="store-map"
+                className="inline-block bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+              >
+                お店への地図はこちら
+              </Link>
+            </div>
+          )}
           <p className="text-stone-400 text-center">Copyright © 2020 Technical Staff Inc. All Rights Reserved.</p>
         </div>
       </div>

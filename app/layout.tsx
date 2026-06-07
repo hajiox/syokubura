@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Suspense } from "react"
@@ -16,6 +17,7 @@ const ogpDescription =
   "道の駅あいづ湯川・会津坂下にある「会津食のブランド館」で、喜多方・山塩・味噌の会津三大ラーメンをはじめ、ソースカツ丼やカレーなど、会津の美味しいものを手軽にお楽しみください。"
 // 本番環境のURLをここに入れる。ローカル開発時はngrokなどのURLか、Vercelのプレビュードメイン
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aizu-shokuno-brandkan.vercel.app" // 例: Vercelのデフォルトドメイン
+const gaMeasurementId = "G-QF0C5C17LW"
 
 export const metadata: Metadata = {
   title: {
@@ -59,6 +61,18 @@ export default function RootLayout({
   return (
     <html lang="ja" suppressHydrationWarning>
       <body className={inter.className}>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gaMeasurementId}');
+          `}
+        </Script>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         </ThemeProvider>

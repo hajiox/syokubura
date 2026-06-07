@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { StoreMapViewEvent } from "@/components/store-map-view-event"
 
 const googleMapEmbedUrl =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.30388931034!2d139.9208079!3d37.5007502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff5535cf0cdc5a7%3A0xc1e02afb913c2084!2z5Lya5rSl44OW44Op44Oz44OJ6aSoIEFpenUgQnJhbmQgSGFsbA!5e0!3m2!1sja!2sjp!4v1778143961829!5m2!1sja!2sjp"
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 export default function StoreMapPage() {
   return (
     <div className="min-h-screen bg-stone-50">
+      <StoreMapViewEvent />
       <Header />
 
       <main className="py-16">

@@ -4,27 +4,21 @@ import { useEffect } from "react"
 
 declare global {
   interface Window {
+    dataLayer?: IArguments[]
     gtag?: (command: "event", eventName: string) => void
   }
 }
 
 export function StoreMapViewEvent() {
   useEffect(() => {
-    let attempts = 0
-
-    const sendEvent = () => {
-      if (window.gtag) {
-        window.gtag("event", "store_map_view")
-        return
+    window.dataLayer = window.dataLayer || []
+    window.gtag =
+      window.gtag ||
+      function gtag() {
+        window.dataLayer?.push(arguments)
       }
 
-      attempts += 1
-      if (attempts < 20) {
-        window.setTimeout(sendEvent, 100)
-      }
-    }
-
-    sendEvent()
+    window.gtag("event", "store_map_view")
   }, [])
 
   return null
